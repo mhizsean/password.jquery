@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/754f4ab304.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="jquery.passwordstrength.js"></script>
+
+</head>
+<body>
+    
+    <form>
+        <img src="user1.png" alt="">
+        <div class="input-box">
+            <span><i class="fas fa-user"></i></span>
+            <input type="text" placeholder="Username" required>
+        </div>
+        <div class="input-box">
+            <span><i class="fas fa-envelope"></i></span>
+            <input type="email" placeholder="Email" required>
+        </div>
+        <div class="input-box">
+            <span><i class="fas fa-key"></i></span>
+            <input type="password" id="password" placeholder="Password" required>
+        </div>
+        <button type="submit"><i class="fas fa-sign-in-alt"></i>Register</button>
+    </form>
+
+    <script type="text/javascript">
+        $(function() {
+            $("#password").passwordStrength();
+        });
+    </script>
+
+</body>
+</html>
